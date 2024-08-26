@@ -12,8 +12,9 @@ public class MoveController : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+        float y = Input.GetAxis("Jump");
 
-        Vector3 moveDir = new Vector3(x, 0, z);
+        Vector3 moveDir = new Vector3(x, y, z);
         if (moveDir == Vector3.zero)
             return;
 

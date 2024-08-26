@@ -18,15 +18,15 @@ public class InputTester : MonoBehaviour
     private void InputByDevice()
     {
         // 키보드 입력감지
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))    //누르고 있는 동안 true
         {
-            Debug.Log("Space key is perssing");
+            Debug.Log("Space key is perssing"); 
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))    //눌렀을때 true
         {
             Debug.Log("Space key is down");
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space))  //땠을때 true
         {
             Debug.Log("Space key is up");
         }

@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class GameObjectTester : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Transform target;
+    [SerializeField] Collider[] colls;
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
     {
+        target = gameObject.GetComponent<Transform>();
+        colls = gameObject.GetComponentsInChildren<Collider>();
+
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            Debug.Log($"{i} - {transform.GetChild(i).gameObject.name}");
+        }
         
     }
 }

@@ -22,7 +22,7 @@ public class CoroutineTest : MonoBehaviour
         {
             if (delayJumpCoroutine != null)
             {
-                StopCoroutine(delayJumpCoroutine);// 内风凭阑 肛苗拎具窃
+                StopCoroutine(delayJumpCoroutine);// 怖 内风凭阑 肛苗拎具窃
                 delayJumpCoroutine = null;
             }
         }
